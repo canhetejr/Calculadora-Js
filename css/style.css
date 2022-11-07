@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body{
+    background-color: #39312c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3em;
+}
+
+#calc{
+    width: 400px;
+    padding: 1.7em;
+    background-color: #17181A;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    
+}
+
+#calc h3{
+    font-size: .8em;
+    font-weight: 300;
+    color: #F87120;
+
+}
+
+#operations{
+    color: #fff;
+    text-align: right;
+
+}
+
+#previous-operation{
+    color: #fff;
+    padding: .2em;
+    overflow-wrap: break-word;
+    min-height: 1.6em;
+
+}
+
+#current-operation{
+    min-height: 1.6em;
+    font-size: 3em;
+    padding: 0.2em;
+    overflow-wrap: break-word;
+}
+
+#buttons-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+#buttons-container button{
+    border: 1px solid transparent;
+    border-radius: 0;
+    height: 4em;
+    font-size: 1.2em;
+    background-color: #6C6C6C;
+    cursor: pointer;
+    border-radius: 20px;
+    color: #fff;
+
+}
+#buttons-container button:hover{
+    background-color: #565555;
+}
+
+#buttons-container .number{
+    background-color:#303136;
+    color: #F87120;
+}
+
+#buttons-container .number:hover{
+    background-color: #1a1b1e;
+}
+
+#buttons-container #equal-btn{
+    grid-column: span 2;
+    background-color: #fff;
+    color: #000;
+}
+
+#buttons-container #equal-btn:hover{
+    background-color: #d4d4d4;
+}
+
+#buttons-container .operator{
+    background-color: #F87120;
+    color: #000;
+}
+
+#buttons-container .operator:hover{
+    background-color: #9a4714;
+}
+
+#buttons-container #pointer{
+    background-color:#303136;
+    color: #F87120;
+}
+#buttons-container #pointer:hover{
+    background-color: #1a1b1e
+}
+
+
+@media (max-width: 650px){
+    body{
+        background-color: #17181A;
+        padding-top: 0;
+    }
+  
+  #calc{
+    width: 100%;
+    padding: 1.7em;
+    background-color: #17181A;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+  
+  }
+  
+  #buttons-container button{
+    border: 1px solid transparent;
+    border-radius: 0;
+    width: auto;
+    height: 4em;
+    font-size: 1.2em;
+    background-color: #6C6C6C;
+    cursor: pointer;
+    border-radius: 20px;
+    color: #fff;
+  }
+  
+  }
+  
